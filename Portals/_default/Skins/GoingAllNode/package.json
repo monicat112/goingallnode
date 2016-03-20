@@ -1,0 +1,13 @@
+{
+  "name": "goingallnode",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "custom": "echo \"This is a custom script\""
+  },
+  "author": "Monica Salter",
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
+}
