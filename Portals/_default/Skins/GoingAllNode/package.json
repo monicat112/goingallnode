@@ -2,8 +2,7 @@
   "name": "goingallnode",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "custom": "echo \"This is a custom script\""
+    "start": "uglifyjs --output ./dist/js/main.js ./src/js/main.js --compress --mangle --lint --screw-ie8 && echo \"uglify was successful!\""
   },
   "author": "Monica Salter",
   "license": "MIT",
