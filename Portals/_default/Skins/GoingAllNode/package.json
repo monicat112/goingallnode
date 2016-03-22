@@ -2,11 +2,16 @@
   "name": "goingallnode",
   "version": "1.0.0",
   "scripts": {
-    "start": "uglifyjs --output ./dist/js/main.js ./src/js/main.js --compress --mangle --lint --screw-ie8 && echo \"uglify was successful!\""
+    "watch:postcss": "postcss --dir ./dist skin.css --use autoprefixer --autoprefixer.browsers \"last 2 versions, ie >= 10\" ./src/skin.css",
+    "watch:uglify": "uglifyjs --output ./dist/js/main.js ./src/js/main.js --compress --mangle --lint --screw-ie8 && echo \"uglify was successful!\"",
+    "watch": "npm run watch:postcss; npm run watch:uglify"
   },
   "author": "Monica Salter",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "postcss": "^5.0.19",
+    "postcss-cli": "^2.5.1",
     "uglify-js": "^2.6.2"
   }
 }
