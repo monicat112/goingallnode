@@ -2,16 +2,26 @@
   "name": "goingallnode",
   "version": "1.0.0",
   "scripts": {
-    "watch:postcss": "postcss --dir ./dist skin.css --use autoprefixer --autoprefixer.browsers \"last 2 versions, ie >= 10\" ./src/skin.css",
-    "watch:uglify": "uglifyjs --output ./dist/js/main.js ./src/js/main.js --compress --mangle --lint --screw-ie8 && echo \"uglify was successful!\"",
-    "watch": "npm run watch:postcss; npm run watch:uglify"
+    "build:postcss": "postcss --dir ./dist skin.css --use autoprefixer --autoprefixer.browsers \"last 2 versions, ie >= 10\" ./src/css/*.css",
+    "build:uglify": "uglifyjs --output ./dist/js/main.js ./src/js/main.js --compress --mangle --lint --screw-ie8",
+    "build:images": "imagemin ./src/img/* ./dist/img",
+    "watch:postcss": "watch 'npm run build:postcss' ./src/css",
+    "watch:uglify": "watch 'npm run build:uglify' ./src/js",
+    "watch:images": "watch 'npm run build:images' ./src/img",
+    "prewatch": "rimraf ./dist/js/* ./dist/img/*",
+    "watch": "parallelshell 'npm run watch:uglify' 'npm run watch:postcss' 'npm run watch:images'"
   },
   "author": "Monica Salter",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.4",
+    "imagemin": "^4.0.0",
+    "imagemin-cli": "^2.1.0",
+    "parallelshell": "^2.0.0",
     "postcss": "^5.0.19",
     "postcss-cli": "^2.5.1",
-    "uglify-js": "^2.6.2"
+    "rimraf": "^2.5.2",
+    "uglify-js": "^2.6.2",
+    "watch": "^0.17.1"
   }
 }

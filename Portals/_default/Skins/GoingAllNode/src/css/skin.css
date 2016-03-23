@@ -1,6 +1,4 @@
 .test {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   outline: 1px solid magenta;
   background: lightgray;
