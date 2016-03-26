@@ -16,7 +16,8 @@ body {
     /*font-family: $main-font;*/
 }
 
-img, svg {
+img,
+svg {
     max-width: 100%;
     height: auto;
 }
