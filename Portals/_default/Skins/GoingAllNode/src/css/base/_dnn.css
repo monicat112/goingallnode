@@ -1,0 +1,15 @@
+/* Reset DNN controls to content-box, otherwise they break */
+#ControlBar_ControlPanel,
+.dnnDropDownList,
+.actionMenu,
+.RadAjaxPanel,
+.dnnTextPanel,.RadAjax_Default,
+.RadAjax_Default *,
+.RadWindow {
+    box-sizing: content-box;
+}
+
+/* html module spacing */
+.DnnModule-DNN_HTML {
+  margin-bottom: 60px;
+}

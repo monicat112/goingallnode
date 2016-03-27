@@ -1,0 +1,17 @@
+/* colors */
+$text-color: #5A5959;
+
+/* units */
+$max-width: 1300px;
+$spacing-1: 20px;
+$spacing-2: resolve($spacing-1 * 2);
+
+/* fonts */
+$main-font: 'proxima-nova', sans-serif; /* 400 */
+$title-font: 'proxima-nova-soft', sans-serif; /* 700 */
+
+/* breakpoints */
+$br-sm:    500px;
+$br-md:    620px;
+$br-md-2:  840px;
+$br-lg:    900px;

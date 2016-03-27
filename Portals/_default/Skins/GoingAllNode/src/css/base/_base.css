@@ -9,11 +9,11 @@ html {
 }
 
 body {
-    font-size: 2.4rem;
-    line-height: 1.3;
+    font-size: 1.6rem;
+    line-height: 1.4;
     background: #fff;
-    /*color: $text-color;*/
-    /*font-family: $main-font;*/
+    color: $text-color;
+    font-family: $main-font;
 }
 
 img,
