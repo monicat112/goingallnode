@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "postcss": "postcss --dir ./dist skin.css --use postcss-easy-import --use postcss-mixins --use postcss-nested --use postcss-simple-vars --use postcss-mathjs --use postcss-extend --use autoprefixer --use css-mqpacker --config options.json ./src/css/skin.css",
-    "cleancss": "cleancss -o ./dist/skin.css ./dist/skin.css",
+    "cleancss": "cleancss --output ./dist/skin.css ./dist/skin.css",
     "build:css": "npm run postcss && npm run cleancss",
     "build:js": "uglifyjs --output ./dist/js/main.js ./src/js/main.js --compress --mangle --lint --screw-ie8",
     "build:images": "imagemin ./src/img/* ./dist/img",

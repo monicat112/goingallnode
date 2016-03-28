@@ -1,0 +1,43 @@
+/* link states */
+@define-mixin link-states {
+    &:hover, &:focus, &:active {
+        @mixin-content;
+    }
+}
+
+/* for light text on dark bg's*/
+@define-mixin font-smoothing {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* standard flaot clear */
+@define-mixin float-clear {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* hide something from visual users w/o hiding it from screen readers */
+@define-mixin visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip-path: inset(1px 1px 1px 1px);
+}
+
+/* positioning */
+@define-mixin centerer {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@define-mixin pseudo-absolute {
+  position: absolute;
+  content: '';
+  display: inline-block;
+}

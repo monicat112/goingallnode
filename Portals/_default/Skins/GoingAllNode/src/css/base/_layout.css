@@ -1,0 +1,30 @@
+/*@media (min-width: $break) { @mixin-content; }*/
+
+.container {
+  @mixin float-clear;
+  max-width: $max-width;
+  margin: 0 auto;
+  position: relative;
+  padding: resolve($spacing-1 / 2) $spacing-1;
+  @media (min-width: $br-sm) {
+    padding: $spacing-1 $spacing-2;
+  }
+}
+
+/* simple grid */
+.half {
+
+}
+
+.third {
+
+}
+
+/* flex row */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

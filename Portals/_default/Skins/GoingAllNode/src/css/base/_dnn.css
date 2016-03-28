@@ -8,8 +8,3 @@
 .RadWindow {
     box-sizing: content-box;
 }
-
-/* html module spacing */
-.DnnModule-DNN_HTML {
-  margin-bottom: 60px;
-}
