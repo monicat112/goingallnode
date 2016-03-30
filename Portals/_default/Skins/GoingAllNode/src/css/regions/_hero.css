@@ -1,20 +1,59 @@
+$char-height: 150px;
+$hero-after-height: 60px;
+
+@keyframes scroll {
+  100%{
+    background-position: -20800px bottom;
+  }
+}
+
+
 .hero {
   @mixin font-smoothing;
   text-align: center;
-  background: $hero-blue;
-  background: linear-gradient($hero-blue 30%, $hero-green);
+  background: #000;
   color: #fff;
+  position: relative;
 }
 
 .hero_inner {
-  @extend %region-space-h;
-  background-image: url(img/city-skyline.png);
+  background-image: url(img/undertale-ruins.png);
   background-repeat: repeat-x;
   background-position: center bottom;
   padding-bottom: 60px;
-  min-height: 100vh;
+  min-height: calc(100vh - $hero-after-height);
   width: 100%;
-  &.is-animated {
-    animation: 14000s scroll infinite linear;
-  }
+  animation: 1400s scroll infinite linear;
+}
+
+.hero_text {
+  position: absolute;
+  @mixin centerer;
+  top: auto;
+  bottom: 60px;
+  padding: $spacing-2;
+  background: #000;
+}
+
+.hero_title {
+  margin: 0 0 $spacing-1;
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.hero-after {
+  position: relative;
+  background: #83387c;
+  height: $hero-after-height;
+  border-bottom: 8px solid #4B2047;
+}
+
+.hero-after_char {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: $char-height;
+  height: auto;
 }
