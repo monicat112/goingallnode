@@ -10,16 +10,17 @@
 <dnn:META ID="META1" runat="server" Name="viewport" Content="maximum-scale=1.5, initial-scale=1.0,minimum-scale=1.0,width=device-width" />
 
 <header role="banner">
-    <img src="<% =SkinPath %>img/an-image.jpg" alt="an undefined image">
-    <dnn:MENU ID="MENU" MenuStyle="Menus/MainMenu" runat="server" NodeSelector="*"></dnn:MENU>
+    <!-- <img src="<% =SkinPath %>img/an-image.jpg" alt="an undefined image"> -->
+    <!-- <dnn:MENU ID="MENU" MenuStyle="Menus/MainMenu" runat="server" NodeSelector="*"></dnn:MENU> -->
 </header>
 
 <main role="main">
-  <div id="ContentPane" class="" runat="server"></div>
+  <div id="HeroPane" runat="server"></div>
+  <div id="ContentPane" class="container" runat="server"></div>
 </main>
 
 <footer role="contentinfo">
   <dnn:LOGIN ID="dnnLogin" CssClass="LoginLink" runat="server" LegacyMode="false" />
 </footer>
 
-<!--#include file="Common/AddFiles.ascx"-->
+<!--#include file="includes/files.ascx"-->

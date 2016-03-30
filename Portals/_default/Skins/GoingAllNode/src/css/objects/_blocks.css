@@ -1,0 +1,27 @@
+%block-simple {
+  padding: $spacing-2 $spacing-2 50px;
+  h2 {
+    margin-top: 0;
+  }
+}
+
+%block-dark {
+  @mixin font-smoothing;
+  color: #fff;
+  h2 {
+    color: #fff;
+  }
+}
+
+
+.block-navy {
+  @extend %block-dark;
+  @extend %block-simple;
+  background: $navy;
+}
+
+.block-orange {
+  @extend %block-dark;
+  @extend %block-simple;
+  background: $orange;
+}

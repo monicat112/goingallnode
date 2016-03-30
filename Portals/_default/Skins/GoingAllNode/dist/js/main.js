@@ -1,1 +1,1 @@
-$(document).ready(function(){console.log("this is a test")});
+!function(n){n(document).ready(function(){})}(jQuery);

@@ -1,4 +1,4 @@
-// here's our script
-$(document).ready(function(){
-  console.log('this is a test');
-});
+(function($) {
+  $(document).ready(function(){
+  });
+})(jQuery);

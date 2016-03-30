@@ -12,13 +12,7 @@
 }
 
 /* simple grid */
-.half {
 
-}
-
-.third {
-
-}
 
 /* flex row */
 .flex-row {
@@ -27,4 +21,18 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+/* flex items */
+.flex-split-50 {
+  width: 100%;
+  padding: 0 $spacing-1;
+  @media (min-width: $br-lg) {
+    padding: $spacing-1;
+    width: 50%;
+    max-width: 50%;
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+  }
 }

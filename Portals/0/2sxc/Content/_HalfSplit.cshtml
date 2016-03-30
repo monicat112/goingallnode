@@ -1,0 +1,16 @@
+<div class="flex-row">
+  <div class="flex-split-50">
+    <div class="block-navy">
+      <h2>@Content.Title1</h2>
+      <!-- Html.Raw gets the paragraph tags to output as html tags inststead of static text -->
+      @Html.Raw(@Content.Body1)
+    </div>
+  </div>
+  <div class="flex-split-50">
+    <div class="block-orange">
+      <h2>@Content.Title2</h2>
+      <!-- Html.Raw gets the paragraph tags to output as html tags inststead of static text -->
+      @Html.Raw(@Content.Body2)
+    </div>
+  </div>
+</div>

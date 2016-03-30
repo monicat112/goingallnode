@@ -1,5 +1,7 @@
 /* colors */
 $text-color: #5A5959;
+$navy: #4A5082;
+$orange: #de6351;
 
 /* units */
 $max-width: 1300px;
@@ -7,8 +9,8 @@ $spacing-1: 20px;
 $spacing-2: resolve($spacing-1 * 2);
 
 /* fonts */
-$main-font: 'proxima-nova', sans-serif; /* 400 */
-$title-font: 'proxima-nova-soft', sans-serif; /* 700 */
+$main-font: 'Open Sans', sans-serif; /* 400 */
+$title-font: 'Passion One', sans-serif;
 
 /* breakpoints */
 $br-sm:    500px;

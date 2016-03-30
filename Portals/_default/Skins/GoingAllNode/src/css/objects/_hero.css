@@ -1,0 +1,58 @@
+$char-height: 150px;
+$hero-after-height: 60px;
+
+@keyframes scroll {
+  100%{
+    background-position: -208000px bottom;
+  }
+}
+
+
+.hero {
+  @mixin font-smoothing;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+.hero_inner {
+  background-image: url(img/undertale-ruins.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding-bottom: 60px;
+  min-height: calc(100vh - $hero-after-height);
+  width: 100%;
+  animation: 14000s scroll infinite linear;
+}
+
+.hero_text {
+  position: absolute;
+  @mixin centerer;
+  top: auto;
+  bottom: 60px;
+  padding: $spacing-2;
+  background: #000;
+}
+
+.hero_title {
+  margin: 0 0 $spacing-1;
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.hero-after {
+  position: relative;
+  background: #83387c;
+  height: $hero-after-height;
+}
+
+.hero-after_char {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: $char-height;
+  height: auto;
+}
