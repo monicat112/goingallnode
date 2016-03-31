@@ -21,32 +21,35 @@ $hero-after-height: 60px;
   background-repeat: repeat-x;
   background-position: center bottom;
   padding-bottom: 60px;
-  min-height: calc(100vh - $hero-after-height);
   width: 100%;
   animation: 1400s scroll infinite linear;
+  overflow: hidden;
 }
 
 .hero_text {
-  position: absolute;
-  @mixin centerer;
-  top: auto;
-  bottom: 60px;
-  padding: $spacing-2;
+  @mixin block-padding;
+  margin: 40px auto 100px;
+  max-width: 600px;
   background: #000;
+  width: calc(100% - $spacing-lg); /* 100% width minus side space */
+  p {
+    font-size: 1.8rem;
+  }
 }
 
 .hero_title {
-  margin: 0 0 $spacing-1;
+  margin: 0 0 $spacing-sm;
   color: #fff;
-  font-size: 2.6rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 
 .hero-after {
   position: relative;
-  background: #83387c;
+  background: $purple;
   height: $hero-after-height;
   border-bottom: 8px solid #4B2047;
+  margin-bottom: $spacing-lg;
 }
 
 .hero-after_char {
@@ -56,4 +59,24 @@ $hero-after-height: 60px;
   transform: translateX(-50%);
   max-height: $char-height;
   height: auto;
+}
+
+@media only all and (min-width: $br-sm) {
+
+  .hero_inner {
+    min-height: calc(100vh - $hero-after-height);
+  }
+
+  .hero_text {
+    margin: 0;
+    position: absolute;
+    @mixin centerer;
+    top: calc(50% - 20px); /* vert center with a 20px offset */
+  }
+}
+
+@media only all and (min-width: $br-md) {
+  .hero_text {
+    top: calc(50% + 60px); /* vert center with a 60px offset */
+  }
 }

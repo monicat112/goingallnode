@@ -1,5 +1,6 @@
 @import "mixins/*";
 @import "settings/*";
 @import "base/*";
+@import "regions/*";
 @import "objects/*";
 @import "_utility.css";

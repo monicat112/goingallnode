@@ -1,5 +1,33 @@
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-family: $title-font;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  margin: $spacing-sm 0;
+  color: #323652;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.7rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+p {
+  margin: $spacing-sm 0;
+}
+
+
+.orange-text {
+  color: $orange;
 }

@@ -10,29 +10,23 @@
 <dnn:META ID="META1" runat="server" Name="viewport" Content="maximum-scale=1.5, initial-scale=1.0,minimum-scale=1.0,width=device-width" />
 
 <header role="banner">
-    <!-- <img src="<% =SkinPath %>img/an-image.jpg" alt="an undefined image"> -->
-    <!-- <dnn:MENU ID="MENU" MenuStyle="Menus/MainMenu" runat="server" NodeSelector="*"></dnn:MENU> -->
+  <h1 class="visually-hidden">Undertale the Game</h1>
 </header>
 
 <main role="main">
   <div id="HeroPane" runat="server"></div>
+
+  <h2 class="align-center">Featuring</h2>
   <div id="ContentPane" class="container" runat="server"></div>
-  <h2>Featuring...</h2>
 
-  <h3>Puzzles &amp; Mysteries!</h3>
+  <div class="region-gray-pattern region-space">
+    <div id="GrayPane" class="container" runat="server"></div>
+  </div>
 
-  <h3>An Assortment of Doggos!</h3>
-
-  <h3>Excellent Music!</h3>
-  <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh.<p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/kyuvjwS3jpk?list=PLE9NBypnb2JnDYh7Z5OQAo9MjDj2Eef9m" frameborder="0" allowfullscreen></iframe>
-
+  <div class="region-space">
+    <div id="BottomPane" class="container" runat="server"></div>
+  </div>
 </main>
 
-<footer role="contentinfo">
-  <div class="container">
-    <p class="align-center">stay determined</p>
-  </div>
-</footer>
-
+<!--#include file="includes/footer.ascx"-->
 <!--#include file="includes/files.ascx"-->

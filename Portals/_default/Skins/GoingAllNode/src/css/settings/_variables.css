@@ -2,18 +2,28 @@
 $text-color: #5A5959;
 $navy: #4A5082;
 $orange: #de6351;
+$orange-dark: #c44c3a;
+$purple: #83387C;
+$purple-dark: #602c5b;
+$purple-ash: #382937;
 
 /* units */
 $max-width: 1300px;
-$spacing-1: 20px;
-$spacing-2: resolve($spacing-1 * 2);
+
+$spacing-sm: 15px;
+$spacing-md: 20px;
+$spacing-md-2: 30px;
+$spacing-lg: resolve($spacing-md * 2);
+$spacing-xlg: 60px;
 
 /* fonts */
 $main-font: 'Open Sans', sans-serif; /* 400 */
 $title-font: 'Passion One', sans-serif;
 
 /* breakpoints */
-$br-sm:    500px;
+$br-sm: 500px;
 $br-md:    620px;
-$br-md-2:  840px;
-$br-lg:    900px;
+/*$br-md-2:  840px;*/
+$br-lg: 900px;
+
+$br-sm-vert: 540px;

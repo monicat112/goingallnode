@@ -1,7 +1,27 @@
+
+@define-mixin block-padding {
+  padding: $spacing-md $spacing-md-2;
+}
+
+@define-mixin block-margin {
+  margin: $spacing-md 0;
+}
+
+@define-mixin block-margin-xlg {
+  margin: $spacing-xlg 0;
+}
+
 /* link states */
 @define-mixin link-states {
     &:hover, &:focus, &:active {
         @mixin-content;
+    }
+}
+
+@define-mixin white-link {
+  color: #fff;
+    &:hover, &:focus, &:active {
+        color: #fff;
     }
 }
 

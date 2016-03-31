@@ -1,0 +1,7 @@
+a {
+  color: $orange;
+  @mixin link-states {
+    text-decoration: none;
+    color: $orange-dark;
+  }
+}

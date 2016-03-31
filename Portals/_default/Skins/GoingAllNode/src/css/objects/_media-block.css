@@ -1,0 +1,59 @@
+/* Use like this
+<div class="media">
+  <div class="media_media"><img src="" alt=""></div>
+  <div class="media_body"><p></p></div>
+</div>
+
+http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+*/
+
+$media-width: 500px;
+
+.media {
+  @mixin block-margin-xlg;
+}
+
+@media only all and (min-width: $br-lg) {
+  .media {
+    display: flex;
+  }
+
+  .media_media {
+    text-align: center;
+    width: $media-width;
+  }
+
+  .media_body {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: $spacing-md;
+  }
+
+  /* modifiers */
+  .media--right {
+    flex-direction: row-reverse;
+    .media_body {
+      padding-left: 0;
+      padding-right: $spacing-md;
+    }
+  }
+
+  .media_media--video {
+    > div {
+      position: relative;
+      padding-bottom: 56.25%; /* 9/16 aspect ratio */
+      height: 0;
+      max-width: $media-width;
+      margin: 0 auto;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

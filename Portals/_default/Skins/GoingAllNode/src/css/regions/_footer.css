@@ -1,0 +1,9 @@
+.footer {
+  background: $purple-ash;
+  text-align: center;
+  color: #eee;
+  font-size: 1.4rem;
+  margin-top: 60px;
+  padding-top: $spacing-md-2;
+  padding-bottom: $spacing-lg;
+}

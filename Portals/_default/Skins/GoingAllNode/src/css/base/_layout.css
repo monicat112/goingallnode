@@ -1,4 +1,4 @@
-/*@media (min-width: $break) { @mixin-content; }*/
+/* @media only all and (min-width: $break) { content }*/
 
 .container {
   @mixin float-clear;
@@ -6,7 +6,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  padding: $spacing-1 $spacing-2;
+  padding: 0 $spacing-sm;
 }
 
 
@@ -17,15 +17,15 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: -$spacing-2;
-  margin-right: -$spacing-2;
+  margin-left: resolve(-$spacing-sm / 2);
+  margin-right: resolve(-$spacing-sm / 2);
 }
 
 /* flex items */
 .flex-split-50 {
   width: 100%;
-  padding: 0 $spacing-2;
-  @media (min-width: $br-lg) {
+  padding: 0 $spacing-sm;
+  @media only all and (min-width: $br-lg) {
     width: 50%;
     max-width: 50%;
     align-self: stretch;

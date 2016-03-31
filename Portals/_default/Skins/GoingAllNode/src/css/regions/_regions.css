@@ -1,0 +1,14 @@
+.region-space {
+  margin-top: $spacing-lg;
+  margin-bottom: $spacing-lg;
+}
+
+.region-ash {
+  background: $purple-ash;
+}
+
+.region-gray-pattern {
+  background: url(img/undertale-ruins-gray.jpg) #c0c0c0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

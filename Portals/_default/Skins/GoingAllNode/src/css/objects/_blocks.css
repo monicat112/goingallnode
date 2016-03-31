@@ -1,6 +1,7 @@
-%block-simple {
-  padding: $spacing-2 $spacing-2 50px;
-  h2 {
+%block-base {
+  @mixin block-padding;
+  @mixin block-margin;
+  h2, h3 {
     margin-top: 0;
   }
 }
@@ -8,20 +9,22 @@
 %block-dark {
   @mixin font-smoothing;
   color: #fff;
-  h2 {
+  h2, h3 {
     color: #fff;
+  }
+  a {
+    @mixin white-link;
   }
 }
 
-
 .block-navy {
+  @extend %block-base;
   @extend %block-dark;
-  @extend %block-simple;
   background: $navy;
 }
 
 .block-orange {
+  @extend %block-base;
   @extend %block-dark;
-  @extend %block-simple;
   background: $orange;
 }

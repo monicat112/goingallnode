@@ -1,0 +1,30 @@
+%btn-base {
+  display: inline-block;
+  border: none;
+  background: none;
+  text-decoration: none;
+  line-height: 1.2;
+  border-radius: 0;
+  text-align: center;
+  color: #fff;
+  font-family: $title-font;
+
+  @mixin link-states {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+%btn-purple {
+  background: $purple;
+  @mixin link-states {
+    background: $purple-dark;
+  }
+}
+
+.btn-feat {
+  @extend %btn-base;
+  @extend %btn-purple;
+  font-size: 3rem;
+  padding: $spacing-md $spacing-lg;
+}
