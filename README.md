@@ -3,7 +3,7 @@
 ## Getting Started
 
 1. Navigate to Portals/\_default/Skins/GoingAllNode in terminal (or command prompt)
-2. Run `npm install` to downloading all the required node modules
+2. Run `npm install` to download all the required node modules
 3. Run `npm watch` to start watching your files
 
 ## Slides
